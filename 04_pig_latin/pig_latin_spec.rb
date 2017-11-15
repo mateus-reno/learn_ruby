@@ -36,13 +36,13 @@ describe "#translate" do
     expect(s).to eq("errychay")
   end
 
+  it "translates a word beginning with three consonants" do
+    expect(translate("three")).to eq("eethray")
+  end
+
   it "translates two words" do
     s = translate("eat pie")
     expect(s).to eq("eatay iepay")
-  end
-
-  it "translates a word beginning with three consonants" do
-    expect(translate("three")).to eq("eethray")
   end
 
   it "counts 'sch' as a single phoneme" do
